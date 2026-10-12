@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Öztürk Elektrik Elektronik | Kurumsal Çözümler</title>
     <style>
+        /* Sektöre Özel Canlı Renk Paleti ve Temel Ayarlar */
         :root {
             --primary-color: #0b132b; 
             --secondary-color: #ff9f1c; 
@@ -15,6 +16,7 @@
         body { color: var(--text-color); background-color: var(--bg-light); line-height: 1.6; padding-bottom: 60px; }
         html { scroll-behavior: smooth; }
 
+        /* Navigasyon Barı */
         header { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 15px 20px; }
         .logo { font-size: 22px; font-weight: 800; color: var(--primary-color); letter-spacing: 0.5px; text-decoration: none; }
@@ -23,6 +25,7 @@
         .nav-links a { text-decoration: none; color: var(--text-color); font-weight: 600; font-size: 15px; transition: color 0.3s; }
         .nav-links a:hover { color: var(--secondary-color); }
 
+        /* Koyu Gece Mavisi / Turuncu Şık Giriş Alanı */
         .hero { 
             background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%); 
             color: #fff; 
@@ -42,21 +45,20 @@
         .card { background: #fff; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: all 0.3s; border: 1px solid #e2e8f0; overflow: hidden; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-color: #cbd5e1; }
         
-        /* Kırılmaz Akıllı Grafik Alanları */
-        .card-graphic-panel { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 4px solid var(--secondary-color); }
-        .g-color1 { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
-        .g-color2 { background: linear-gradient(135deg, #111827, #4b5563); }
-        .g-color3 { background: linear-gradient(135deg, #b45309, #d97706); }
-        .g-color4 { background: linear-gradient(135deg, #065f46, #10b981); }
-        .g-color5 { background: linear-gradient(135deg, #6b21a8, #a855f7); }
-        .g-color6 { background: linear-gradient(135deg, #991b1b, #ef4444); }
-        
-        .svg-icon-style { width: 70px; height: 70px; fill: #ffffff; }
+        /* Modern Geometrik Renkli İkon Blokları (Kırılmaz Sürüm) */
+        .card-img-placeholder { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px; color: #fff; border-bottom: 4px solid var(--secondary-color); font-weight: bold; }
+        .bg-1 { background: linear-gradient(135deg, #1e3a8a, #3b82f6); }
+        .bg-2 { background: linear-gradient(135deg, #111827, #4b5563); }
+        .bg-3 { background: linear-gradient(135deg, #b45309, #d97706); }
+        .bg-4 { background: linear-gradient(135deg, #065f46, #10b981); }
+        .bg-5 { background: linear-gradient(135deg, #6b21a8, #a855f7); }
+        .bg-6 { background: linear-gradient(135deg, #991b1b, #ef4444); }
 
         .card-content { padding: 25px 20px; }
         .card h3 { font-size: 20px; color: var(--primary-color); margin-bottom: 12px; font-weight: 700; }
         .card p { color: #64748b; font-size: 15px; }
 
+        /* İletişim Alanı Düzeni */
         .contact-wrapper { display: flex; flex-wrap: wrap; gap: 40px; margin-top: 20px; }
         .contact-info { flex: 1; min-width: 300px; background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .contact-info h3 { color: var(--primary-color); margin-bottom: 20px; font-size: 22px; font-weight: 700; }
@@ -73,6 +75,7 @@
         .form-btn { width: 100%; background: var(--primary-color); color: #fff; border: none; padding: 14px; font-size: 16px; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
         .form-btn:hover { background: #1c2541; }
 
+        /* 🟢 SABİT WHATSAPP SOHBET BALONU PRO */
         .whatsapp-fixed-bubble { 
             position: fixed !important; 
             bottom: 30px !important; 
@@ -123,39 +126,45 @@
         <h2 class="section-title">Hizmet Alanlarımız</h2>
         <div class="services-grid">
             
-            <!-- Kart 1: Altyapı -->
             <div class="card">
-                <div class="brand-graphic-box card-graphic-panel g-color1">
-                    <svg class="svg-icon-style" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-                </div>
+                <div class="card-img-placeholder bg-1">⚡</div>
                 <div class="card-content">
-                    <h3>⚡ Elektrik & Elektronik Altyapı</h3>
+                    <h3>Elektrik & Elektronik Altyapı</h3>
                     <p>Güvenliğiniz bizim için önceliklidir. İç ve dış mekan tüm altyapı kurulumlarını standartlara uygun, dayanıklı ve yüksek kaliteli malzemelerle gerçekleştiriyoruz.</p>
                 </div>
             </div>
 
-            <!-- Kart 2: Tamir -->
             <div class="card">
-                <div class="brand-graphic-box card-graphic-panel g-color2">
-                    <svg class="svg-icon-style" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L7.6 4.7 4.7 7.6 1.7 4.6C.6 7-.2 10 1.9 12c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l3.4-3.4c.4-.4.4-1.1 0-1.4z"/></svg>
-                </div>
+                <div class="card-img-placeholder bg-2">🛠️</div>
                 <div class="card-content">
-                    <h3>🛠️ Tamir, Tadilat & Bakım</h3>
+                    <h3>Tamir, Tadilat & Bakım</h3>
                     <p>Meydana gelen arızaları en kısa sürede tespit ediyor; evinizdeki ya da iş yerinizdeki sistemlerin sorunsuz çalışması için hızlı ve garantili çözümler sunuyoruz.</p>
                 </div>
             </div>
 
-            <!-- Kart 3: Aydınlatma -->
             <div class="card">
-                <div class="brand-graphic-box card-graphic-panel g-color3">
-                    <svg class="svg-icon-style" viewBox="0 0 24 24"><path d="M12 2C7.58 2 4 5.58 4 10c0 2.76 1.4 5.19 3.54 6.61L7.54 18c-.3.3-.5.74-.5 1.22V21c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1.78c0-.48-.2-.92-.5-1.22l-.01-.39C18.6 15.19 20 12.76 20 10c0-4.58-3.58-8-8-8zm0 18H8v-1h8v1zm.75-2h-1.5v-1h1.5v1z"/></svg>
-                </div>
+                <div class="card-img-placeholder bg-3">💡</div>
                 <div class="card-content">
-                    <h3>💡 Modern Aydınlatma Sistemleri</h3>
+                    <h3>Modern Aydınlatma Sistemleri</h3>
                     <p>Estetik ve tasarrufu bir araya getiren LED sistemleri, çevre aydınlatmaları ve kurumsal iç mekan aydınlatma tasarımları ile alanlarınıza enerji veriyoruz.</p>
                 </div>
             </div>
 
-            <!-- Kart 4: Uydu -->
             <div class="card">
-                <div class="brand-graphic-box card-graphic-panel g-color4">
+                <div class="card-img-placeholder bg-4">📡</div>
+                <div class="card-content">
+                    <h3>Uydu & Anten Sistemleri</h3>
+                    <p>Merkezi veya bireysel uydu sistemlerinin kurulumu, sinyal ayarları, kablolama ve montaj işlemlerini kesintisiz yayın kalitesi sağlayacak şekilde kurguluyoruz.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-placeholder bg-5">📐</div>
+                <div class="card-content">
+                    <h3>Proje & Mühendislik</h3>
+                    <p>Yeni yapılar veya revizyonlar için yasal mevzuatlara ve teknik şartnamelere tam uyumlu elektrik uygulama projeleri hazırlıyor ve yönetiyoruz.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-placeholder bg-6">🛡️</div>
